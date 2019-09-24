@@ -29,9 +29,7 @@
             4,
             {
                 "SwitchCase": 1
-            },
-            2,
-            "tab"
+            }
         ],
         "no-tabs": 0,
         "no-plusplus": [

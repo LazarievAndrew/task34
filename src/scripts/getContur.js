@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 // контур
 
 export function getContur(x, y, radius, context) {

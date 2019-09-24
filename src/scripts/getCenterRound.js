@@ -8,9 +8,8 @@ export function getCenterRound(x, y, radius, context) {
     context.moveTo(x, y);
     context.save();
     context.clip();
-    context.clearRect(x - radius / 35, y - radius / 35,
-        // eslint-disable-next-line no-mixed-operators
-        radius / 35 * 2, radius / 35 * 2);
+    // eslint-disable-next-line no-mixed-operators
+    context.clearRect(x - radius / 35, y - radius / 35, radius / 35 * 2, radius / 35 * 2);
     context.restore();
     context.stroke();
     context.closePath();
