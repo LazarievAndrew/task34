@@ -4,9 +4,7 @@ import { getNumbers } from './getNumbers';
 import { getArrow } from './getArrow';
 import { getCenterRound } from './getCenterRound';
 
-
 export function analogClock() {
-
     const canvas = document.getElementById('clocks');
     const ctx = canvas.getContext('2d');
 
@@ -23,7 +21,7 @@ export function analogClock() {
     getSecondsPoints(xCenter, yCenter, radiusClock, canvas.width, ctx);
     getNumbers(xCenter, yCenter, radiusClock, canvas.width, ctx);
 
-    //стрелки
+    // стрелки
     const secondsArrowLength = radiusClock * 0.95;
     const minutesArrowLength = radiusClock * 0.8;
     const hoursArrowLength = radiusClock * 0.65;
@@ -31,13 +29,13 @@ export function analogClock() {
     const timeSeconds = 6 * time.getSeconds();
     const timeMinutes = 6 * (time.getMinutes() + (1 / 60) * time.getSeconds());
     const timeHours = 30 * (time.getHours() + (1 / 60) * time.getMinutes());
-    //часовая
+    // часовая
     getArrow(xCenter, yCenter, timeHours, hoursArrowLength, canvas.width / 80, 'black', ctx);
-    //минутная
+    // минутная
     getArrow(xCenter, yCenter, timeMinutes, minutesArrowLength, canvas.width / 120, 'blue', ctx);
-    //секундная
+    // секундная
     getArrow(xCenter, yCenter, timeSeconds, secondsArrowLength, canvas.width / 250, 'red', ctx);
 
-    //кружок в центре
-    getCenterRound(xCenter, yCenter, radiusClock, ctx)
+    // кружок в центре
+    getCenterRound(xCenter, yCenter, radiusClock, ctx);
 }

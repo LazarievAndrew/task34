@@ -11,8 +11,8 @@ export function getNumbers(x, y, radius, width, context) {
             context.strokeText(i, xNumber - width / 90, yNumber + width / 55);
         } else {
             context.strokeText(i, xNumber - width / 30, yNumber + width / 55);
-        };
+        }
         context.stroke();
         context.closePath();
-    };
+    }
 }

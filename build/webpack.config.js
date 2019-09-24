@@ -8,7 +8,7 @@ const isDevelopment = 'production' !== process.env.NODE_ENV;
 
 module.exports = {
 	entry: {
-		templates: './src/custom-elements/custom-elements.js',
+		// templates: './src/custom-elements/custom-elements.js',
 		bundle: ['./src/app.js', './src/main.scss']
 	},
 	output: {

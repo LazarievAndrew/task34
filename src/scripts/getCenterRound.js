@@ -1,4 +1,4 @@
-//кружок в центре
+// кружок в центре
 
 export function getCenterRound(x, y, radius, context) {
     context.strokeStyle = 'black';
@@ -9,6 +9,7 @@ export function getCenterRound(x, y, radius, context) {
     context.save();
     context.clip();
     context.clearRect(x - radius / 35, y - radius / 35,
+        // eslint-disable-next-line no-mixed-operators
         radius / 35 * 2, radius / 35 * 2);
     context.restore();
     context.stroke();
