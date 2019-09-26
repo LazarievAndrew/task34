@@ -1,5 +1,5 @@
-import { analogClock } from './scripts/analogClock';
+import analogClock from './scripts/analogClock';
 
-window.onload = function () {
+window.onload = (() => {
     window.setInterval(() => analogClock(), 1000);
-};
+});

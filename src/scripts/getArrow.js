@@ -1,6 +1,6 @@
 // Стрелки
 
-export function getArrow(x, y, time, length, width, color, context) {
+export default function getArrow(x, y, time, length, width, color, context) {
     context.beginPath();
     context.strokeStyle = color;
     context.lineWidth = width;

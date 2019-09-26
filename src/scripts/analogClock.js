@@ -1,10 +1,10 @@
-import { getContur } from './getContur';
-import { getSecondsPoints } from './getSecondsPoints';
-import { getNumbers } from './getNumbers';
-import { getArrow } from './getArrow';
-import { getCenterRound } from './getCenterRound';
+import getContur from './getContur';
+import getSecondsPoints from './getSecondsPoints';
+import getNumbers from './getNumbers';
+import getArrow from './getArrow';
+import getCenterRound from './getCenterRound';
 
-export function analogClock() {
+export default function analogClock() {
     const canvas = document.getElementById('clocks');
     const ctx = canvas.getContext('2d');
 
@@ -35,7 +35,6 @@ export function analogClock() {
     getArrow(xCenter, yCenter, timeMinutes, minutesArrowLength, canvas.width / 120, 'blue', ctx);
     // секундная
     getArrow(xCenter, yCenter, timeSeconds, secondsArrowLength, canvas.width / 250, 'red', ctx);
-
     // кружок в центре
     getCenterRound(xCenter, yCenter, radiusClock, ctx);
 }

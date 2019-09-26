@@ -1,6 +1,6 @@
 // отметки секунд
 
-export function getSecondsPoints(x, y, radius, width, context) {
+export default function getSecondsPoints(x, y, radius, width, context) {
     const radiusSec = radius - width / 50;
     let radiusSecPoint;
 
